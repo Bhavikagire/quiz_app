@@ -1,0 +1,52 @@
+http://localhost:8000/users/register
+
+{
+  "username": "your_username",
+  "password": "your_password"
+}
+
+---------------------------------------------------------------------------------------
+
+http://localhost:8000/users/login
+
+{
+  "username": "your_username",
+  "password": "your_password"
+}
+
+---------------------------------------------------------------------------------------
+
+http://localhost:8000/quizzes/create-quiz
+
+Headers
+x-auth-token, Value: <paste_your_token_here>
+
+{
+  "question": "What is the capital of France?",
+  "options": ["Paris", "Berlin", "Madrid", "Rome"],
+  "rightAnswer": 0,
+  "startDate": "2023-01-01T12:00:00Z",
+  "endDate": "2023-01-01T13:00:00Z",
+  "status": "active"
+}
+
+---------------------------------------------------------------------------------------
+
+
+http://localhost:8000/quizzes/get-active-quiz
+headers:
+Key: x-auth-token, Value: <paste_your_token_here>
+
+---------------------------------------------------------------------------------------
+
+http://localhost:8000/quizzes/get-quiz-result/{quiz_id}
+headers:
+Key: x-auth-token, Value: <paste_your_token_here>
+
+---------------------------------------------------------------------------------------
+
+http://localhost:8000/quizzes/get-all-quizzes
+headers:
+Key: x-auth-token, Value: <paste_your_token_here>
+
+---------------------------------------------------------------------------------------
