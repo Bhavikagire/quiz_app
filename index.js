@@ -7,7 +7,7 @@ const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const quizRoutes = require('./routes/quizroute');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 const userRoutes = require('./routes/userroute');
 
 

@@ -291,4 +291,4 @@ quizRoutes.get('/get-all-quizzes', async (req, res) => {
 });
 
 module.exports = quizRoutes;
-// ... (rest of the code remains unchanged)
+
